@@ -3,46 +3,50 @@
   max-width: 1440px;
   padding: 0 1rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.main {
+  max-width: 1440px;
+  padding: 5rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
 }
 
 .gradientText0 {
-  background: -webkit-linear-gradient(#bfa3da, #84309c, #c735b0);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffcc00; /* Yellow */
 }
 
 .gradientText1 {
-  background: -webkit-linear-gradient(#a79af9, #7aa8d2);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff6347; /* Tomato */
 }
 
 .gradientText2 {
-  background: -webkit-linear-gradient(#bfa3da, #743f93);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #00bfff; /* Deep Sky Blue */
 }
 
 .gradientText3 {
-  background: -webkit-linear-gradient(#c35ab1, #e9a8d9);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #adff2f; /* Green Yellow */
 }
 
 .title a:hover,
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-  text-decoration-color: #84309c;
+  text-decoration-color: #ffcc00; /* Yellow */
 }
 
 .title {
   line-height: 1.15;
   font-size: 4rem;
+  color: #ffffff; /* White */
 }
 
 .title,
@@ -59,6 +63,7 @@
   margin-bottom: 2rem;
   line-height: 1.5;
   font-size: 1.5rem;
+  color: #ffffff; /* White */
 }
 
 .code {
@@ -66,6 +71,7 @@
   border-radius: 5px;
   padding: 0.5em;
   font-size: 1.1rem;
+  color: #ffffff; /* White */
 }
 
 .grid {
@@ -76,15 +82,16 @@
 }
 
 .card {
-  background-color: #131313;
+  background-color: #333333; /* Dark Grey */
   text-align: left;
-  color: inherit;
+  color: #ffffff; /* White */
   text-decoration: none;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 440px;
   overflow: none;
   border: none;
+  padding: 1rem;
 }
 
 .cardText {
@@ -98,13 +105,6 @@
   border-radius: 4px 4px 0 0;
   margin-bottom: 12px;
   border: none;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  background-color: #272c34;
-  opacity: 80%;
 }
 
 .card h2 {
@@ -140,6 +140,56 @@
 .footer {
   border-color: #222;
 }
+
 .logo img {
   filter: invert(1);
 }
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navbarOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbarOptions p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbarOptions Link {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.navbarLogoutButton {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbarLogoutButton:hover {
+  background-color: #ff6b6b;
+}
+

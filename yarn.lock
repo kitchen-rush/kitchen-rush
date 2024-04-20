@@ -1850,7 +1850,7 @@
   resolved "https://registry.yarnpkg.com/@tanstack/virtual-core/-/virtual-core-3.3.0.tgz#1bf72d51f269c5a0e3ac872c6b57116767f42c25"
   integrity sha512-A0004OAa1FcUkPHeeGoKgBrAgjH+uHdDPrw1L7RpkwnODYqRvoilqsHPs8cyTjMg1byZBbiNpQAq2TlFLIaQag==
 
-"@thirdweb-dev/auth@4.1.62":
+"@thirdweb-dev/auth@4.1.62", "@thirdweb-dev/auth@^4.1.62":
   version "4.1.62"
   resolved "https://registry.yarnpkg.com/@thirdweb-dev/auth/-/auth-4.1.62.tgz#2b319209f0b2165d11595520d4dc480b72ca92fa"
   integrity sha512-XuN1zMJbh6iV8WttLtd0l254vE7MvIDIkZiOUXLb2D97d1DQvwlnRdRDUOFmjEdaUrSys2O4V0ElPevsK0FuGQ==
@@ -1896,6 +1896,11 @@
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/@thirdweb-dev/dynamic-contracts/-/dynamic-contracts-1.2.5.tgz#f9735c0d46198e7bf2f98c277f0a9a79c54da1e8"
   integrity sha512-YVsz+jUWbwj+6aF2eTZGMfyw47a1HRmgNl4LQ3gW9gwYL5y5+OX/yOzv6aV5ibvoqCk/k10aIVK2eFrcpMubQA==
+
+"@thirdweb-dev/engine@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@thirdweb-dev/engine/-/engine-0.0.5.tgz#411a4a07f51cb545b342352ec76bf9571d14e2af"
+  integrity sha512-R3x3dGUga4gq4GuCihse9Jq57Lnutvw0hjuIpRKS0CibiFMm5v6vNb7zv+FgF+7hNzAoI6yXocqSV1xOklPxEA==
 
 "@thirdweb-dev/generated-abis@0.0.1", "@thirdweb-dev/generated-abis@^0.0.1":
   version "0.0.1"

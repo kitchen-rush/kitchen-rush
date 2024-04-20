@@ -1,104 +1,67 @@
-import { ConnectWallet } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
 import { NextPage } from "next";
+import { ConnectWallet, useAddress, useSDK, useUser, useWallet } from "@thirdweb-dev/react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from 'react';
+import { getUser } from "./api/auth/[...thirdweb]";
+import Chef from "../components/Chef";
+import Shop from "../components/Utils";
 
 const Home: NextPage = () => {
+  const {isLoggedIn, isLoading } = useUser();
+  const router = useRouter();
+
+  const wallet = useWallet();
+  const address = useAddress();
+  const sdk = useSDK();
+  
+  const [loadingchefStatus, setLoadingchefStatus ] = useState(false);
+  const [loadingStatus, setLoadingStatus ] = useState("");
+
+  const checkNewPlayer = async () => {
+    try{
+
+    }catch (error){
+      console.error
+
+    }
+  };
+  useEffect(() => {
+    if(!isLoggedIn && !isLoading) {
+      router.push("/login");
+    }
+  }, [isLoggedIn, isLoading, router]);
+
   return (
-    <main className={styles.main}>
-      <div className={styles.container}>
-        <div className={styles.header}>
-          <h1 className={styles.title}>
-            Welcome to{" "}
-            <span className={styles.gradientText0}>
-              <a
-                href="https://thirdweb.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                thirdweb.
-              </a>
-            </span>
-          </h1>
+    <div className={styles.main}>
+      <div style={{
+        display: "flex",
+        justifyContent: "flex-start",
+        alignItems: "flex-start",
+        flexDirection: "row",
+        width: "100%",
+      }}>
 
-          <p className={styles.description}>
-            Get started by configuring your desired network in{" "}
-            <code className={styles.code}>src/index.js</code>, then modify the{" "}
-            <code className={styles.code}>src/App.js</code> file!
-          </p>
-
-          <div className={styles.connect}>
-            <ConnectWallet />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://portal.thirdweb.com/"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/images/portal-preview.png"
-              alt="Placeholder preview of starter"
-              width={300}
-              height={200}
-            />
-            <div className={styles.cardText}>
-              <h2 className={styles.gradientText1}>Portal ➜</h2>
-              <p>
-                Guides, references, and resources that will help you build with
-                thirdweb.
-              </p>
-            </div>
-          </a>
-
-          <a
-            href="https://thirdweb.com/dashboard"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/images/dashboard-preview.png"
-              alt="Placeholder preview of starter"
-              width={300}
-              height={200}
-            />
-            <div className={styles.cardText}>
-              <h2 className={styles.gradientText2}>Dashboard ➜</h2>
-              <p>
-                Deploy, configure, and manage your smart contracts from the
-                dashboard.
-              </p>
-            </div>
-          </a>
-
-          <a
-            href="https://thirdweb.com/templates"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/images/templates-preview.png"
-              alt="Placeholder preview of templates"
-              width={300}
-              height={200}
-            />
-            <div className={styles.cardText}>
-              <h2 className={styles.gradientText3}>Templates ➜</h2>
-              <p>
-                Discover and clone template projects showcasing thirdweb
-                features.
-              </p>
-            </div>
-          </a>
-        </div>
       </div>
-    </main>
+      <Chef />
+      <Shop />
+    </div>
   );
 };
 
 export default Home;
+
+export async function getServerSideProps(context:any) {
+  const user = await getUser(context.req);
+  if (!user) {
+    return {
+      redirect : {
+        destination: "/login",
+        permanent: false,
+      }
+    }
+  }
+    return {
+      props: {},
+    };
+  }
