@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       activeChain={activeChain}
       supportedWallets={[
         smartWallet(embeddedWallet(), {
-          factoryAddress: "0xEC0Bc9D59A187AA5693084657deC06889A8398bD",
+          factoryAddress: "",
           gasless: true,
         })
       ]}
