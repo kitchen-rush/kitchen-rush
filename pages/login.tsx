@@ -80,7 +80,7 @@ const Login  = () => {
 
     return (
         <div className={styles.container}>
-            <h1>Cooking Cash</h1>
+            <h1>Kitchen Rush</h1>
             {showConnectedEmbed && (
                 <ConnectEmbed
                     auth={{

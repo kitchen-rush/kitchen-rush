@@ -1,4 +1,4 @@
-## Cooking Cash
+## Kitchen Rush
 ## Getting Started
 
 Create a project using this example:

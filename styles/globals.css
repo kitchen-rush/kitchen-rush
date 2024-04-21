@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Press Start 2P', cursive; /* Using Press Start 2P font for a game-like feel */
+  font-family: 'Poppins', sans-serif; /* Using Poppins font for a relaxed vibe */
 }
 
 a {
-  color: #ffcc00; /* Yellow */
+  color: #add8e6; /* Light Blue */
   text-decoration: none;
 }
 
@@ -17,7 +17,6 @@ a {
 }
 
 body {
-  color: #ffffff; /* White */
-  background: #222222; /* Dark Grey */
+  color: #333333; /* Dark Gray */
+  background: #84d4d7; /* Beige */
 }
-  

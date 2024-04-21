@@ -21,26 +21,26 @@
 }
 
 .gradientText0 {
-  color: #ffcc00; /* Yellow */
+  color: #5f9ea0; /* Cadet Blue */
 }
 
 .gradientText1 {
-  color: #ff6347; /* Tomato */
+  color: #8fbc8f; /* Dark Sea Green */
 }
 
 .gradientText2 {
-  color: #00bfff; /* Deep Sky Blue */
+  color: #add8e6; /* Light Blue */
 }
 
 .gradientText3 {
-  color: #adff2f; /* Green Yellow */
+  color: #deb887; /* Burly Wood */
 }
 
 .title a:hover,
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-  text-decoration-color: #ffcc00; /* Yellow */
+  text-decoration-color: #add8e6; /* Light Blue */
 }
 
 .title {
@@ -67,7 +67,7 @@
 }
 
 .code {
-  background: #555;
+  background: black;
   border-radius: 5px;
   padding: 0.5em;
   font-size: 1.1rem;
@@ -82,9 +82,9 @@
 }
 
 .card {
-  background-color: #333333; /* Dark Grey */
+  background-color: #f5f5dc; /* Beige */
   text-align: left;
-  color: #ffffff; /* White */
+  color: white; /* Dark Gray */
   text-decoration: none;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
@@ -138,7 +138,7 @@
 
 .card,
 .footer {
-  border-color: #222;
+  border-color: #ccc; /* Light Gray */
 }
 
 .logo img {
@@ -166,7 +166,7 @@
   margin: 0;
   font-size: 0.9rem;
   font-weight: bold;
-  color: white;
+  color: black;
   cursor: pointer;
   transition: color 0.3s;
 }
@@ -175,7 +175,7 @@
   margin: 0;
   font-size: 0.9rem;
   font-weight: bold;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
@@ -192,4 +192,3 @@
 .navbarLogoutButton:hover {
   background-color: #ff6b6b;
 }
-

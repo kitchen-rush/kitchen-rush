@@ -43,7 +43,7 @@ export default function UtilsCard({tokenId}: Props){
     };
 
     return (
-        <div className={styles.nftCard} style={{ backgroundColor: "#222"}}>
+        <div className={styles.nftCard} style={{ backgroundColor: "white"}}>
             <MediaRenderer
                 src={nft?.metadata.image}
             />

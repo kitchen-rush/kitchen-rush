@@ -15,7 +15,7 @@ const Navbar = () => {
             { address && (
 
                 <>
-                    <h1>Cooking Cash</h1>
+                    <h1>Kitchen Rush</h1>
                     <div className={styles.navbarOptions}>
                         <Link href="/"><p>Kitchen</p></Link>
                         <Link href="/shop"><p>Shop</p></Link>
